@@ -31,7 +31,6 @@ X_train_tfidf = tfidf.fit_transform(X_train)
 X_test_tfidf = tfidf.transform(X_test)
 
 
-
 # 5. MODEL TRAINING
 model = MultinomialNB()
 model.fit(X_train_tfidf, y_train)
